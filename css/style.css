@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-@import url(http://fonts.googleapis.com/css?family=Roboto,sans-serif:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto,sans-serif:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
 
 html, body {
 	height: 100%;
@@ -320,6 +320,11 @@ section {
 	border: 1px solid grey;
     padding: 7px;
     text-align: center;
+}
+.feature-items-phone{
+	border: 1px solid grey;
+    padding: 7px;
+    text-align: left;
 }
 .btn-green:hover, .btn-green:focus {
 	color: rgb(59, 56, 56);
@@ -1053,6 +1058,7 @@ html[xmlns] .slides {
 	padding: 3px 20px;
 	box-shadow: 0px 0px 2px #F2F2F2;
 	margin-bottom: 5px;
+	width:13rem;
 }
 
 .content-tab-1 > .nav li > a {
@@ -1943,6 +1949,7 @@ ul.timeline {
 	margin-bottom:30px;
 	height:5rem;
 	color: #E7E7E7;
+	overflow: auto;
 }
 
 .video-caption h4 {
@@ -2875,7 +2882,12 @@ footer {
 .navbar-right {
 	float:none !important;
 }
-
+#idPriceContent
+{
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
 }
 
  @media (min-width: 768px) and (max-width: 992px) {
@@ -2883,7 +2895,12 @@ footer {
  .thumnail-img {
 	width:50%;
 }
-
+#idPriceContent
+{
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
 }
 
  @media (max-width: 768px) {
@@ -2921,11 +2938,29 @@ footer {
  #main-menu.collapse {
  display: block !important;
 }
-
+#idPriceContent
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clsMobileFeatureList
+{
+	display:none;
+}
 }
 
  @media (max-width: 992px) {
-
+	 #idDesktopFeature
+	 {
+		display:none;
+	 }
+	#idPriceContent
+	{
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
 #main-menu {
 	background:#202020;
 }
